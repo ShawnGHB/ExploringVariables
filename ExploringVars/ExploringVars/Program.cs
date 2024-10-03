@@ -96,6 +96,15 @@
             //Take the current health, sub the damage then store the new val back into health
             heroHealth = heroHealth - bossStrength;
             Console.WriteLine(heroFullName + "is now at " + heroHealth + " health!");
+            //Our Hero Strikes Fiercely!
+            Console.WriteLine(heroFullName + " attacks each villain for " + heroStrength + " damage!");
+            //do math
+            bossHealth -= heroStrength;
+            //Display results in the console
+            Console.WriteLine(villainTitle + " now has " + bossHealth + " health!");
+            //Results
+            Console.WriteLine(heroFullName + " is victorious!");
+            Console.WriteLine("Huzzah for our glorious, beautiful hero!");
         }
     }
 }
